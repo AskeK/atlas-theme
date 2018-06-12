@@ -1,0 +1,40 @@
+
+
+// Top Menu
+.top-menu {
+
+  height: 32px;
+  background-color: #1e1e1e;
+  padding-left: 14px;
+
+  .top-menu-elem {
+
+    position: relative;
+    color: darken( $primary-color, 10% );
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0 14px;
+
+    &:after,
+    &:nth-child(1):before {
+
+      content: '';
+
+      position: absolute;
+      top: 3px;
+      width: 1px;
+      height: 9px;
+
+      background-color: darken( $primary-color, 10% );
+
+    }
+
+    &:after { right: 0; }
+    &:nth-child(1):before { left: 0; }
+    &:hover { color: $primary-color; }
+
+  }
+
+}

@@ -1,10 +1,23 @@
 <?php
 
 // Imports files
+// Functions root
 import ( array (
+  
   'setup',
   'includes'
+
 ));
+
+// Custom types
+import ( array ( 
+  
+  'plank-16mm',
+  'plank-21mm',
+  'parquet',
+  'footboard'
+
+), 'custom-types' );
 
 // Import Function
 function import ( $files, $path='' ) {
